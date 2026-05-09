@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # 1. 填入你的 API Key
-genai.configure(api_key="AIzaSyA7ex1Tr2b6_nAlY04V0k5Y-pA9EnlNP6U")
+genai.configure(api_key=st.secrets["GEMINI_KEY"])
 
 # 2. 设置页面标题和图标
 st.set_page_config(page_title="播客灵感大师", page_icon="🎙️")
